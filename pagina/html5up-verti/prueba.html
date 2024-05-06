@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mapa</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANSTKPGd_-OvjnF5UD7lPwQojjS1dXYH8&callback=initMap" async defer></script>
+
+</head>
+<body>
+    <div class="container">  
+        <script>
+            function initMap() {
+                // Crea un nuevo mapa en el elemento con el ID "map"
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: -34.397, lng: 150.644},
+                    zoom: 8
+                });
+            }
+        </script>
+
+        <div id="map" style="height: 400px;"></div>
+    </div> 
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13305.946279832002!2d-70.60977050000001!3d-33.514732900000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d067d1e0e7d7%3A0x94d9cb68f79c0a28!2sHospital%20La%20Florida%20Dra.%20Elo%C3%ADsa%20D%C3%ADaz!5e0!3m2!1ses-419!2scl!4v1714783573105!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    
+
+</body>
+</html>
