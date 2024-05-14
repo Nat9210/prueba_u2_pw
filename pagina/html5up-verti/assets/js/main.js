@@ -1,8 +1,4 @@
-/*
-	Verti by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 (function($) {
 
@@ -62,3 +58,9 @@
 				});
 
 })(jQuery);
+
+window.addEventListener("load", function(){
+	document.getElementById("submit").addEventListener("click", function(){
+		alert("Datos ingresados correctamente, nos pondremos en contacto pronto")
+	})
+})
