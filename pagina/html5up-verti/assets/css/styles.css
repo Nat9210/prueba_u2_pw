@@ -31,7 +31,7 @@ body {
 }
 
 .box-info {
-    color:#181616;
+    color:#100f0f;
     display:flex;
     flex-direction: column;
     gap:50px;
@@ -53,7 +53,7 @@ body {
 }
 
 .data > p > i {
-    color:crimson;
+    color:#0090c5;
     margin-right: 10px;
     font-size:25px;
 }
@@ -69,7 +69,7 @@ body {
     text-decoration: none;
     width: 40px;
     height: 40px;
-    background: crimson;
+    background: #0090c5;
     text-align: center;
     transition: .1s;
 }
@@ -97,10 +97,10 @@ form {
     padding: 0 10px;
     outline:none;
     background: rgba(255 255 255 / .1);
-    border:3px solid transparent;
+    border:3px solid transprent;
     letter-spacing: 1px;
     transition:.3s;
-    color:#fff;
+    color:#1b1919;
     
 }
 
@@ -117,7 +117,7 @@ form {
 
 .input-box > input:focus,
 .input-box > textarea:focus {
-    border-bottom:3px solid crimson;
+    border-bottom:3px solid #0090c5;
     animation: shake .2s;
 }
 
@@ -130,7 +130,7 @@ form {
     letter-spacing: 1px;
     outline: none;
     transition:.3s;
-    color:#fff;
+    color:#161515;
     letter-spacing: 1.5px;
 }
 
@@ -145,14 +145,14 @@ form {
 }
 
 .input-box > input:focus ~ i {
-    color:crimson;
+    color: #0090c5;
 }
 
 form > button {
     width: 100%;
     padding: 10px;
     outline: none;
-    background: crimson;
+    background: #0090c5;
     color:#fff;
     border:none;
     transition: .1s;
@@ -162,7 +162,7 @@ form > button {
 
 form > button:hover,
 .links > a:hover {
-    background: rgb(172, 16, 47);
+    background: #3cc4f5;
 }
 
 @keyframes shake { 
