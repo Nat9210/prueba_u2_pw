@@ -6,7 +6,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
+#logo
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -96,7 +96,7 @@ input, select, textarea {
 		background-repeat: repeat-x, repeat;
 		background-size: 100% 30em, auto;
 		font-family: 'Open Sans', sans-serif;
-		font-size: 13pt;
+		font-size: 12pt;
 		color: #696969;
 		font-weight: 300;
 		line-height: 2.25em;
@@ -2631,14 +2631,19 @@ input, select, textarea {
 
 		/* Logo */
 
+		#logo h1 {
+			font-size: 2.75em;
+			padding: 0.2em 0.275em;
+		}
+		#logo span {
+			line-height: 3em;
+		}
+		
+		@media screen and (max-width: 736px) {
 			#logo h1 {
-				font-size: 2.75em;
-				padding: 0.2em 0.275em;
+			font-size: 1.5em;
 			}
-
-			#logo span {
-				line-height: 3em;
-			}
+		}
 
 		/* Banner */
 
