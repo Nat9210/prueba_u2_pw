@@ -5,8 +5,12 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
+		<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 	</head>
 	<body class="is-preload right-sidebar">
 		<div id="page-wrapper">
@@ -46,35 +50,44 @@
 				<div id="main-wrapper">
 					<div class="container">
 						<div class="row gtr-200">
-							<div class="col-8 col-12-medium">
+							<div class="col-12 col-12-medium">
 								<div id="content">
+
 									<!--inicio carousel-->
-									<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+									<div id="carousel" class="carousel slide" data-ride="carousel">
 										<ol class="carousel-indicators">
-										  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-										  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-										  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+										  <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+										  <li data-target="#carouselCaptions" data-slide-to="1"></li>
+										  <li data-target="#carouselCaptions" data-slide-to="2"></li>
+										  <li data-target="#carouselCaptions" data-slide-to="3"></li>
 										</ol>
 										<div class="carousel-inner">
 										  <div class="carousel-item active">
-											<img src="images/excursion_foto3_127.png" class="d-block w-100" alt="...">
+											<img src="images/C-_Users_Joaquin_Desktop_jonathajunge_JJD_4286.png" class="d-block w-100" alt="...">
 											<div class="carousel-caption d-none d-md-block">
-											  <h5>First slide label</h5>
-											  <p>Some representative placeholder content for the first slide.</p>
+											  <h5>Las Cornisas</h5>
+											  <p>San Pedro de Atacama</p>
 											</div>
 										  </div>
 										  <div class="carousel-item">
-											<img src="..." class="d-block w-100" alt="...">
+											<img src="images/Orlando-Contreras-López-compressor.png" class="d-block w-100" alt="...">
 											<div class="carousel-caption d-none d-md-block">
-											  <h5>Second slide label</h5>
-											  <p>Some representative placeholder content for the second slide.</p>
+											  <h5>Altos de Lircay</h5>
+											  <p>Reserva Nacional Altos de Lircay</p>
 											</div>
 										  </div>
 										  <div class="carousel-item">
-											<img src="..." class="d-block w-100" alt="...">
+											<img src="images/Trekking_en_Chile_Parque_Tantauco-compressor.png" class="d-block w-100" alt="...">
 											<div class="carousel-caption d-none d-md-block">
-											  <h5>Third slide label</h5>
-											  <p>Some representative placeholder content for the third slide.</p>
+											  <h5>Parque Tantauco</h5>
+											  <p>Ruta Transversal (Isla de Chiloe)</p>
+											</div>
+										  </div>
+										  <div class="carousel-item">
+											<img src="images/Trekking_en_Chile_Torres_-del_Paine.png" class="d-block w-100" alt="...">
+											<div class="carousel-caption d-none d-md-block">
+											  <h5>Torres del Paine</h5>
+											  <p>Parque Nacional Torres del Paine (Magallanes)</p>
 											</div>
 										  </div>
 										</div>
@@ -103,6 +116,7 @@
 							<div class="col-4 col-12-medium">
 
 								<!-- Box -->
+								
 									<section class="box feature">
 										<a href="#" class="image featured"><img src="images/excursion_foto3_127.png" alt="" width="" height=""/></a>
 										<div class="inner">
@@ -111,10 +125,18 @@
 												<p>Duración: 11 Horas.
 													Dificultad: Baja.</p>
 											</header>
-											<p>Trekking  todo el día, en el sector de Cabo San Isidro, Punta del Árbol. Con un paisaje de bosque siempre verde, prístino, con mucha flora y un circuito de caminata histórico.
-												Charles Darwin uno de los primeros en hacer ascenso al monte Tarn, en su visita por el Estrecho de Magallanes, tirando Ancla al pie del monte y frente al lugar de inicio de  nuestro tour.
-												Llegamos al km 70 al sur de Punta Arenas, justo donde termina el nuevo camino para vehículos.</p>
+											<p>Trekking  todo el día, en el sector de Cabo San Isidro, Punta del Árbol.
+												Con un paisaje de bosque siempre verde, prístino, con mucha flora y un 
+												circuito de caminata histórico.
+												Charles Darwin uno de los primeros en hacer ascenso al monte Tarn, en 
+												su visita por el Estrecho de Magallanes, tirando Ancla al pie del monte 
+												y frente al lugar de inicio de  nuestro tour.
+												Llegamos al km 70 al sur de Punta Arenas, justo donde termina el nuevo 
+												camino para vehículos.</p>
 										</div>
+
+										<p>$10.00</p>
+										<button class="add-to-cart" data-name="Monte Tarn" data-price="10.00">Explorar</button>
 									</section>
 
 							</div>
@@ -131,7 +153,16 @@
 												<p>Opera: Todo el año - Todos los días.
 													Idiomas: Castellano - Inglés.</p>
 											</header>
-											<p>Descubra el encanto helado del monte Tronador y el glaciar Negro en una estimulante excursión de día completo al Parque Nacional Nahuel Huapi desde Bariloche. Con un guía experto, viaje a través del espectacular paisaje de la región de Bariloche y disfrute de las vistas panorámicas del lago Gutiérrez. Contemple la cumbre de 3478 metros (11 411 pies) del monte Tronador, la montaña más alta de la región, y atraviese impresionantes bosques y espectaculares valles para ver el impresionante glaciar Negro.</p>
+											<p>Descubra el encanto helado del monte Tronador y el glaciar Negro en una
+												estimulante excursión de día completo al Parque Nacional Nahuel Huapi 
+												desde Bariloche. Con un guía experto, viaje a través del espectacular 
+												paisaje de la región de Bariloche y disfrute de las vistas panorámicas 
+												del lago Gutiérrez. Contemple la cumbre de 3478 metros (11 411 pies) 
+												del monte Tronador, la montaña más alta de la región, y atraviese 
+												impresionantes bosques y espectaculares valles para ver el impresionante 
+												glaciar Negro.</p>
+											<p>$10.00</p>
+										<button class="add-to-cart" data-name="Monte Tarn" data-price="10.00">Explorar</button>
 										</div>
 									</section>
 
@@ -149,9 +180,18 @@
 												<p>Opera: Todo el año - Todos los días.
 													Idiomas: Castellano - Inglés.</p>
 											</header>
-											<p>Esta experiencia es única por la combinación de varios elementos excepcionales. En primer lugar, el entorno natural es incomparable: la majestuosidad del Monte Fitz Roy, las lagunas de colores vibrantes y la inmensidad de los paisajes patagónicos crean un escenario impresionante.
+											<p>Esta experiencia es única por la combinación de varios elementos excepcionales. 
+												En primer lugar, el entorno natural es incomparable: la majestuosidad del Monte
+												Fitz Roy, las lagunas de colores vibrantes y la inmensidad de los paisajes 
+												patagónicos crean un escenario impresionante.
 
-												Además, la actividad en sí misma es desafiante, con un trekking de 20 kilómetros que lleva a los aventureros a través de diferentes terrenos, desde bosques hasta ascensos empinados. La variabilidad del terreno y la exigencia física hacen que sea una experiencia gratificante y llena de logros personales.</p>
+												Además, la actividad en sí misma es desafiante, con un trekking de 20 kilómetros
+												que lleva a los aventureros a través de diferentes terrenos, desde bosques hasta
+												ascensos empinados. La variabilidad del terreno y la exigencia física hacen que 
+												sea una experiencia gratificante y llena de logros personales.</p>
+
+												<p>$10.00</p>
+										<button class="add-to-cart" data-name="Monte Tarn" data-price="10.00">Explorar</button>
 										</div>
 									</section>
 
@@ -161,19 +201,54 @@
 				</div>
 				<div class="row gtr-200">
 					<div class="container">
-						<div class="card">
-							<img src="producto1.jpg" alt="Producto 1">
-							<h2>Producto 1</h2>
+						<div class= "row">
+							<div class="col-4 col-12-medium">
+								<!-- Box -->
+								<div class="card">
+							<img src="images/excursion_foto3_127.png" alt="Monte Tarn">
+							<h2>Trekking Monte Tarn</h2>
+							<p>Duración: 11 Horas.
+								Dificultad: Baja.</p>
 							<p>$10.00</p>
-							<button class="add-to-cart" data-name="Producto 1" data-price="10.00">Agregar al carrito</button>
+							<button class="add-to-cart" data-name="Producto 1" data-price="10.00">Explorar</button>
 						</div>
-						<div class="card">
-							<img src="producto2.jpg" alt="Producto 2">
-							<h2>Producto 2</h2>
+							</div>
+							<div class="col-4 col-12-medium">
+								<!-- Box -->
+								<div class="card">
+							<img src="images/excursion_foto3_127.png" alt="Monte Tarn">
+							<h2>Trekking Monte Tarn</h2>
+							<p>Duración: 11 Horas.
+								Dificultad: Baja.</p>
+							<p>$10.00</p>
+							<button class="add-to-cart" data-name="Producto 1" data-price="10.00">Explorar</button>
+						</div>
+							</div>
+							<div class="col-4 col-12-medium">
+								<!-- Box -->
+								<div class="card">
+							<img src="images/excursion_foto3_127.png" alt="Monte Tarn">
+							<h2>Trekking Monte Tarn</h2>
+							<p>Duración: 11 Horas.
+								Dificultad: Baja.</p>
+							<p>$10.00</p>
+							<button class="add-to-cart" data-name="Producto 1" data-price="10.00">Explorar</button>
+						</div>
+							</div>
+							<div class="col-4 col-12-medium">
+								<!-- Box -->
+								<div class="card">
+							<img src="images/16.jpg" alt="Cerro Tronador">
+							<h2>Cerro Tronador</h2>
 							<p>$15.00</p>
-							<button class="add-to-cart" data-name="Producto 2" data-price="15.00">Agregar al carrito</button>
+							<button class="add-to-cart" data-name="Cerro Tronador" data-price="15.00">Explorar</button>
 						</div>
 						<!-- Agrega más cards de productos aquí -->
+
+							</div>
+						</div>
+						
+						
 					</div>
 				</div>
 			<!-- Footer -->

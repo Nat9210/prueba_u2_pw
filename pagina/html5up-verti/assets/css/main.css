@@ -1859,6 +1859,7 @@ input, select, textarea {
 	}
 
 	.widget.contact ul {
+		margin: auto;
 		list-style: none;
 		padding-left: 0;
 		overflow: hidden;
@@ -2675,12 +2676,16 @@ input, select, textarea {
 		/* Content */
 
 			#content {
+				
 				padding-bottom: 3em;
 			}
-
+        
+		   
 		/* Footer */
 
 			#footer section {
+				text-align:center;
+				margin: 0 auto;
 				border-bottom: solid 1px #ccc;
 				padding-bottom: 3em;
 				margin-bottom: 1em !important;
