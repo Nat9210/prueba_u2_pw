@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Verti by HTML5 UP</title>
+		<title>Nuestros servicios | Trekking Travel</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -31,15 +31,21 @@
 								<ul>
 									<li class="current"><a href="index.html">Bienvenido/a</a></li>
 									
-									<li><a href="left-sidebar.html">¿Quiénes somos?</a></li>
-									<li><a href="right-sidebar.html">Nuestros servicios</a></li>
+									<li><a href="quienes-somos.html">¿Quiénes somos?</a></li>
+									<li><a href="nuestros-servicios.html">Nuestros servicios</a></li>
 									<li><a href="no-sidebar.html">Consulta el clima</a></li>
 									<li><a href="Contacto.html">Contactanos</a></li>
+									<li>
+										<a href="Carrito.html" id="cart">
+										<i class="fas fa-shopping-cart"></i> Carrito <span class="badge">0</span>
+									    </a>
+									</li>
 								</ul>
 							</nav>
 
 					</header>
 				</div>
+				
 
 			<!-- Main -->
 				<div id="main-wrapper">
@@ -94,7 +100,24 @@
 						</div>
 					</div>
 				</div>
-
+				<br>
+				<div class="row gtr-200">
+					<div class="container">
+						<div class="card">
+							<img src="producto1.jpg" alt="Producto 1">
+							<h2>Producto 1</h2>
+							<p>$10.00</p>
+							<button class="add-to-cart" data-name="Producto 1" data-price="10.00">Agregar al carrito</button>
+						</div>
+						<div class="card">
+							<img src="producto2.jpg" alt="Producto 2">
+							<h2>Producto 2</h2>
+							<p>$15.00</p>
+							<button class="add-to-cart" data-name="Producto 2" data-price="15.00">Agregar al carrito</button>
+						</div>
+						<!-- Agrega más cards de productos aquí -->
+					</div>
+				</div>
 			<!-- Footer -->
 				<div id="footer-wrapper">
 					<footer id="footer" class="container">
@@ -148,7 +171,7 @@
 
 								<!-- Contact -->
 									<section class="widget contact">
-										<h3>Contact Us</h3>
+										<h3>¡Sigue nuestras redes sociales!</h3>
 										<ul>
 											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -179,6 +202,41 @@
 
 		<!-- Scripts -->
 
+			
+
+
+
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					// Maneja clics en los botones "Agregar al carrito"
+					var addToCartButtons = document.querySelectorAll(".add-to-cart");
+					addToCartButtons.forEach(function(button) {
+						button.addEventListener("click", function() {
+							addToCart(button.dataset.name, parseFloat(button.dataset.price));
+						});
+					});
+				
+					// Función para agregar productos al carrito
+					function addToCart(name, price) {
+						var cart = JSON.parse(localStorage.getItem("cart")) || [];
+						cart.push({ name: name, price: price });
+						localStorage.setItem("cart", JSON.stringify(cart));
+				
+						// Actualiza el número de elementos en el carrito en el ícono del carrito
+						updateCartBadge(cart.length);
+					}
+				
+					// Función para actualizar el número de elementos en el ícono del carrito
+					function updateCartBadge(quantity) {
+						var badge = document.querySelector("#cart .badge");
+						badge.textContent = quantity;
+					}
+				
+					// Actualiza el número de elementos en el ícono del carrito al cargar la página
+					var cart = JSON.parse(localStorage.getItem("cart")) || [];
+					updateCartBadge(cart.length);
+				});
+			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
