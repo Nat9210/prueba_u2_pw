@@ -2115,6 +2115,16 @@ input, select, textarea {
 				padding-left: 0;
 			}
 
+/*carrusel*/
+.carousel-inner img {
+    width: 100%;
+    max-height: 460px;
+}
+
+.carousel-inner{
+	height: 200px;
+}
+
 /* Footer */
 
 	#footer {
@@ -2680,7 +2690,6 @@ input, select, textarea {
 				padding-bottom: 3em;
 			}
         
-		   
 		/* Footer */
 
 			#footer section {
